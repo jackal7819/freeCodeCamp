@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
-import './styles.css';
-
 function App() {
     const [markdown, setMarkdown] = useState(`
 # Welcome to my React Markdown Previewer!
