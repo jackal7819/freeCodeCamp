@@ -1,0 +1,38 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #0baf8c;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	scroll-behavior: smooth;
+    user-select: none;
+}
+
+.drum-pads {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.drum-pad {
+	border: 1px solid #13118b;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 35px;
+	margin: 10px;
+	cursor: pointer;
+	box-shadow: black 3px 3px 5px;
+	background-color: #ededed;
+}
+
+.drum-pad:active {
+	box-shadow: none;
+	background-color: #ffcc6c;
+}
+
+#display {
+	min-height: 20px;
+	text-align: center;
+}
