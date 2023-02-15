@@ -1,0 +1,97 @@
+* {
+	margin:     0;
+	padding:    0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:      'Roboto', sans-serif;
+	font-size:        24px;
+	scroll-behavior:  smooth;
+	user-select:      none;
+	background-color: #8EC5FC;
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+#app {
+	min-height:      100vh;
+	display:         flex;
+	justify-content: center;
+	align-items:     center;
+	flex-direction:  column;
+}
+
+.calculator {
+	width:   350px;
+	height:  450px;
+	display: grid;
+	grid-template-areas:
+		"exp exp exp exp"
+		"io  io  io  io"
+		"ac  ac   .   ."
+		".   .   .   ."
+		".   .   .   ."
+		".   .   .   eq"
+		"n0  n0  .   eq";
+	grid-gap:         1px;
+	padding:          5px;
+	border-radius:    10px;
+	background-color: #222222;
+}
+
+.display {
+	grid-area:       io;
+	display:         flex;
+	justify-content: flex-end;
+	align-items:     center;
+}
+
+.ac {
+	grid-area:        ac;
+	background-color: #ff0000;
+}
+
+.eq {
+	grid-area:        eq;
+	background-color: #00008b;
+}
+
+.n0 {
+	grid-area: n0;
+}
+
+.dec,
+.m,
+.d,
+.a,
+.s {
+	background-color: #808080;
+}
+
+.calculator button {
+	min-height:       100%;
+	min-width:        100%;
+	color:            #ffffff;
+	background-color: inherit;
+	border:           1px solid #0f756b;
+	border-radius:    10px;
+}
+
+.calculator button:hover {
+	color:      #000000;
+	background: #999999;
+}
+
+
+.calculator div {
+	color:         #ffffff;
+	border-radius: 10px;
+}
+
+.exp {
+	height:          1.5rem;
+	width:           340px;
+	grid-area:       exp;
+	display:         flex;
+	justify-content: flex-end;
+}
